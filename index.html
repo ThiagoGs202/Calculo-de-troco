@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Calcular Troco</title>
+    <script src="troco.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="area">
+        <form id="form">
+                <legend id="troco">Calcular Troco</legend>
+                <label for="valorCompra">Valor da compra:
+                    <input type="text" id="valorCompra" name="valorCompra" />
+                </label>
+                <label for="valorPago">Valor pago:
+                    <input type="text" id="valorPago" name="valorPago" />
+                </label>
+    
+                <button type="button" id="button" onclick="calculaTroco()">Calcular troco</button>
+    
+                <label for="valorTroco">Valor do troco:
+                    <input type="text" id="valorTroco" name="valorTroco" readonly />
+                </label>
+                <label for="notasUtilizadas">Notas utilizadas:
+                    <textarea rows="3" id="notasUtilizadas" readonly></textarea>
+                </label>
+            </form>
+    </div>
+</body>
+
+</html>
